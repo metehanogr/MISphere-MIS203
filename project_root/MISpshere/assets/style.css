@@ -20,7 +20,6 @@ body {
     line-height: 1.6;
 }
 
-/* Typography */
 h1, h2, h3, h4 {
     font-family: Georgia, "Times New Roman", serif; 
     margin-top: 0;
@@ -52,7 +51,6 @@ h1, h2, h3, h4 {
     color: var(--blue);
 }
 
-/* Menu uses Poppins */
 .main-nav {
     display: flex;
     gap: 16px;
