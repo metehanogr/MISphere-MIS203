@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | MISphere</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login – MISphere</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/scripts.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-bar">
+        <a href="index.html" class="site-title">MISphere</a>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="forum.html">Forum</a>
+          <a href="login.html" class="active">Login</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+      </div>
+    </header>
 
-    
-    <link rel="stylesheet" href="assets/css/style.css">
+    <main class="page-wrapper">
+      <h1 class="page-title">Login</h1>
+      <p class="page-subtitle">
+        Example login form for MISphere. This page demonstrates a simple HTML
+        form with minimal JavaScript feedback.
+      </p>
 
- 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Arial&display=swap" rel="stylesheet">
-</head>
+      <section class="section">
+        <div class="form-card">
+          <form id="login-form">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="student123"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="••••••••"
+              />
+            </div>
+            <button type="submit" class="btn-primary">Login (demo)</button>
+            <p id="login-message" class="login-extra">
+              This is a demonstration only – no real accounts are created or
+              checked.
+            </p>
+          </form>
 
-<body class="login-body">
+          <div class="login-extra">
+            <strong>New to MISphere?</strong> In a real system, this section
+            would include links to sign-up and password reset pages. For the
+            project, it simply explains the concept without implementing full
+            functionality.
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <div class="login-container">
-        <h1>Welcome to MISphere</h1>
-        <p class="login-subtitle">Login to continue</p>
-
-        <form id="loginForm">
-
-            <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Enter your username">
-
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password">
-
-            <button type="submit" class="login-btn">Login</button>
-
-            <p id="errorMsg" class="error-msg"></p>
-
-        </form>
-    </div>
-
-   
-    <script src="assets/js/script.js"></script>
-</body>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>© <span id="year"></span> MISphere – MIS Students Blog</div>
+        <div>Created for MIS203 Term Project</div>
+      </div>
+    </footer>
+  </body>
 </html>

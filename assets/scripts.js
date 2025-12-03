@@ -1,18 +1,28 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+// Footer: set current year
+document.addEventListener("DOMContentLoaded", function () {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  }
 
-    let user = document.getElementById("username").value.trim();
-    let pass = document.getElementById("password").value.trim();
-    let msg = document.getElementById("errorMsg");
+  // Very simple "demo" behaviour for login form
+  const loginForm = document.getElementById("login-form");
+  const loginMessage = document.getElementById("login-message");
 
-    if (user === "" || pass === "") {
-        msg.textContent = "Please fill out all fields.";
-    } 
-    else if (pass.length < 4) {
-        msg.textContent = "Password must be at least 4 characters.";
-    } 
-    else {
-        msg.textContent = "";
-        window.location.href = "index.html"; 
-    }
+  if (loginForm && loginMessage) {
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const username = loginForm.elements["username"].value.trim();
+
+      if (username.length === 0) {
+        loginMessage.textContent = "Please enter your username to continue.";
+      } else {
+        loginMessage.textContent =
+          "Welcome, " +
+          username +
+          "! (Demo login – no real authentication is performed.)";
+      }
+    });
+  }
 });
