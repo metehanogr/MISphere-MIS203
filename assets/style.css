@@ -58,9 +58,19 @@ h4 {
   font-weight: 700;
   color: var(--blue-dark);
   margin-left: 16px;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: auto;
 }
 
 .main-nav a {
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
   margin-left: 16px;
   text-decoration: none;
   color: #444444;
@@ -74,6 +84,7 @@ h4 {
 .main-nav a.active {
   font-weight: bold;
   color: var(--blue);
+  border-bottom-color: var(--blue);
 }
 
 /* Main content */
