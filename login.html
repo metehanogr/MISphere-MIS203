@@ -22,7 +22,7 @@
     </header>
 
     <main class="page-wrapper">
-      <h1 class="page-title">Login</h1>
+      <h1 class="page-title">Login / Sign Up</h1>
       <p class="page-subtitle">
         Example login form for MISphere. This page demonstrates a simple HTML
         form with minimal JavaScript feedback.
@@ -31,6 +31,7 @@
       <section class="section">
         <div class="form-card">
           <form id="login-form">
+            
             <div class="form-group">
               <label for="username">Username</label>
               <input
@@ -40,6 +41,17 @@
                 placeholder="student123"
               />
             </div>
+
+            <div class="form-group">
+              <label for="school-email">School Email</label>
+              <input
+                type="email"
+                id="school-email"
+                name="school-email"
+                placeholder="student@university.edu.tr"
+              />
+            </div>
+
             <div class="form-group">
               <label for="password">Password</label>
               <input
@@ -49,6 +61,7 @@
                 placeholder="••••••••"
               />
             </div>
+
             <button type="submit" class="btn-primary">Login (demo)</button>
             <p id="login-message" class="login-extra">
               This is a demonstration only – no real accounts are created or
