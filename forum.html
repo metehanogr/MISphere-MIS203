@@ -21,72 +21,71 @@
       </div>
     </header>
 
-    <main class="page-wrapper">
-      <h1 class="page-title">Events</h1>
-      <p class="page-subtitle">
-        A simple overview of upcoming and past MIS-related activities.
-      </p>
+   <main class="page-wrapper">
+  <h1 class="page-title">Forum</h1>
+  <p class="page-subtitle">
+    A simple text-based space for MIS students to discuss courses and share resources.
+  </p>
 
-      <section class="section">
-        <h2>Upcoming Events</h2>
-        <table class="events-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Title</th>
-              <th>Type</th>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dec 5, 2025</td>
-              <td>Digital Transformation in SMEs</td>
-              <td><span class="label">Guest Lecture</span></td>
-              <td>
-                External speaker sharing real-life ERP and cloud adoption
-                experiences.
-              </td>
-            </tr>
-            <tr>
-              <td>Dec 12, 2025</td>
-              <td>MIS203 Term Project Demo Day</td>
-              <td><span class="label">Class Event</span></td>
-              <td>
-                Groups present their websites and explain design and
-                implementation choices.
-              </td>
-            </tr>
-            <tr>
-              <td>Jan 8, 2026</td>
-              <td>Career Talk: Data & Business Analytics</td>
-              <td><span class="label">Career Session</span></td>
-              <td>
-                Alumni working as analysts share practical tips about skills and
-                internships.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+  <section class="forum-intro">
+    <p>
+      This forum is intentionally minimal. It demonstrates how discussion threads can be displayed 
+      on a clean, static HTML layout without backend or database functionality.
+    </p>
+  </section>
 
-      <section class="section">
-        <h2>Previous Highlights</h2>
-        <p>
-          In previous semesters, MIS students attended several workshops on
-          topics such as:
+  <section class="thread-list">
+    <div class="updates-header">
+      <span>Recent Discussions</span>
+    </div>
+
+    <div class="thread-row">
+      <div class="thread-title">How do you organise your MIS203 project files?</div>
+      <div class="thread-meta">Posted by <strong>Ayşe</strong> · Nov 28, 2025 · 6 replies</div>
+      <p>Students share folder structures, naming conventions, and version control tips.</p>
+    </div>
+
+    <div class="thread-row">
+      <div class="thread-title">Best tools for Data Analytics assignments?</div>
+      <div class="thread-meta">Posted by <strong>Ali</strong> · Nov 22, 2025 · 4 replies</div>
+      <p>Discussion about Excel, SQL, Python, and visualization tools used in MIS courses.</p>
+    </div>
+
+    <div class="thread-row">
+      <div class="thread-title">Sharing resources for exam preparation</div>
+      <div class="thread-meta">Posted by <strong>Zeynep</strong> · Nov 15, 2025 · 9 replies</div>
+      <p>Students exchange notes, cheat sheets, and recommended online tutorials.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Start a New Topic</h2>
+    <div class="form-card">
+      <form>
+        <div class="form-group">
+          <label for="topic-title">Topic Title</label>
+          <input type="text" id="topic-title" placeholder="Example: Tips for group projects" />
+        </div>
+
+        <div class="form-group">
+          <label for="topic-author">Your Name</label>
+          <input type="text" id="topic-author" placeholder="Student name" />
+        </div>
+
+        <div class="form-group">
+          <label for="topic-message">Message</label>
+          <textarea id="topic-message" placeholder="Write a short message..."></textarea>
+        </div>
+
+        <button class="btn-primary">Post (Demo)</button>
+
+        <p class="form-note">
+          This is a static demo form. No data is saved; it's only for layout demonstration.
         </p>
-        <ul>
-          <li>Introduction to Business Intelligence tools.</li>
-          <li>Basic web development for MIS students.</li>
-          <li>Cloud computing basics and free-tier resources.</li>
-        </ul>
-        <p>
-          The events on this page are presented in a simple table instead of a
-          complex calendar to keep the structure straightforward.
-        </p>
-      </section>
-    </main>
+      </form>
+    </div>
+  </section>
+</main>
 
     <footer class="site-footer">
       <div class="footer-inner">
