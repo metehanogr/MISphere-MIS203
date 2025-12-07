@@ -2,89 +2,144 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Events – MISphere</title>
+    <title>Forum – MISphere</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" />
     <script src="assets/scripts.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="top-bar">
-        <a href="index.html" class="site-title">MISphere</a>
-        <nav class="main-nav">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="events.html" >Events</a>
-          <a href="forum.html" class="active">Forum</a>
-          <a href="login.html">Login</a>
-          <a href="profile.html">Profile</a>
-        </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+      <div class="container-fluid px-4">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#anaMenu" aria-controls="anaMenu" aria-expanded="false" aria-label="Menüyü Aç">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="anaMenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold text-primary" href="forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="profile.html">Profile</a>
+            </li>
+          </ul>
+        </div>
+    
+        <a class="navbar-brand fw-bold text-primary fs-3" href="index.html">MISphere</a>
+        
       </div>
-    </header>
-
+    </nav>
     <main class="page-wrapper">
-      <h1 class="page-title">Events</h1>
+      <h1 class="page-title">Forum</h1>
       <p class="page-subtitle">
-        A simple overview of upcoming and past MIS-related activities.
+        A simple text-based space for MIS students to discuss courses and share
+        resources.
       </p>
 
-      <section class="section">
-        <h2>Upcoming Events</h2>
-        <table class="events-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Title</th>
-              <th>Type</th>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dec 5, 2025</td>
-              <td>Digital Transformation in SMEs</td>
-              <td><span class="label">Guest Lecture</span></td>
-              <td>
-                External speaker sharing real-life ERP and cloud adoption
-                experiences.
-              </td>
-            </tr>
-            <tr>
-              <td>Dec 12, 2025</td>
-              <td>MIS203 Term Project Demo Day</td>
-              <td><span class="label">Class Event</span></td>
-              <td>
-                Groups present their websites and explain design and
-                implementation choices.
-              </td>
-            </tr>
-            <tr>
-              <td>Jan 8, 2026</td>
-              <td>Career Talk: Data & Business Analytics</td>
-              <td><span class="label">Career Session</span></td>
-              <td>
-                Alumni working as analysts share practical tips about skills and
-                internships.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="forum-intro">
+        <p>
+          This forum is intentionally minimal. It does not implement a real
+          database or user accounts; instead, it shows how a discussion area
+          could be structured in HTML in a very straight forward way.
+        </p>
+      </section>
+
+      <section class="thread-list">
+        <div class="updates-header">
+          <span>Sample Threads</span>
+        </div>
+
+        <div class="thread-row">
+          <div class="thread-title">
+            How do you organise your MIS203 project files?
+          </div>
+          <div class="thread-meta">
+            Posted by <strong>Ayşe</strong> · Nov 28, 2025 · 6 replies
+          </div>
+          <p>
+            Students discuss folder structures, naming conventions and tips for
+            keeping projects clean.
+          </p>
+        </div>
+
+        <div class="thread-row">
+          <div class="thread-title">
+            Recommended tools for data analysis in MIS courses
+          </div>
+          <div class="thread-meta">
+            Posted by <strong>Ali</strong> · Nov 21, 2025 · 4 replies
+          </div>
+          <p>
+            Conversation about Excel, SQL, Python and visualisation tools that
+            are useful for assignments.
+          </p>
+        </div>
+
+        <div class="thread-row">
+          <div class="thread-title">
+            Sharing resources for exam preparation
+          </div>
+          <div class="thread-meta">
+            Posted by <strong>Zeynep</strong> · Nov 14, 2025 · 9 replies
+          </div>
+          <p>
+            Students share summary notes, question banks and useful websites for
+            various MIS subjects.
+          </p>
+        </div>
       </section>
 
       <section class="section">
-        <h2>Previous Highlights</h2>
-        <p>
-          In previous semesters, MIS students attended several workshops on
-          topics such as:
-        </p>
-        <ul>
-          <li>Introduction to Business Intelligence tools.</li>
-          <li>Basic web development for MIS students.</li>
-          <li>Cloud computing basics and free-tier resources.</li>
-        </ul>
-        <p>
-          The events on this page are presented in a simple table instead of a
-          complex calendar to keep the structure straightforward.
-        </p>
+        <h2>Start a New Topic (Demo Form)</h2>
+        <div class="form-card">
+          <form>
+            <div class="form-group">
+              <label for="topic-title">Topic title</label>
+              <input
+                type="text"
+                id="topic-title"
+                name="topic-title"
+                placeholder="Example: Tips for group projects"
+              />
+            </div>
+            <div class="form-group">
+              <label for="topic-author">Your name</label>
+              <input
+                type="text"
+                id="topic-author"
+                name="topic-author"
+                placeholder="Student name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="topic-message">Message</label>
+              <textarea
+                id="topic-message"
+                name="topic-message"
+                placeholder="Write a short description of your topic..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Post (demo)</button>
+            <p class="form-note">
+              This is only a static example form. Submissions are not stored;
+              the goal is to demonstrate page layout and simple interaction.
+            </p>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -94,5 +149,7 @@
         <div>Created for MIS203 Term Project</div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
