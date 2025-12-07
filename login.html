@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Login – MISphere</title>
+    <title>Login / Sign Up – MISphere</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -53,53 +53,72 @@
       </p>
 
       <section class="section">
-        <div class="form-card">
-          <form id="login-form">
+        <div class="row justify-content-center">
             
-            <div class="form-group">
-              <label for="username">Username</label>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="student123"
-              />
+            <div class="col-12 col-md-6 col-lg-5 mb-4">
+                <div class="form-card sign-up-card">
+                    <h3 class="mb-3">Sign Up</h3>
+                    <form id="signup-form">
+                        
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="signup-school-email">School Email</label>
+                            <input type="email" id="signup-school-email" name="school-email" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="signup-username">Username</label>
+                            <input type="text" id="signup-username" name="username" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" name="password" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password-repeat">Password (Repeat)</label>
+                            <input type="password" id="signup-password-repeat" name="password-repeat" required />
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Sign Up</button>
+                    </form>
+                </div>
             </div>
 
-            <div class="form-group">
-              <label for="school-email">School Email</label>
-              <input
-                type="email"
-                id="school-email"
-                name="school-email"
-                placeholder="student@university.edu.tr"
-              />
+            <div class="col-12 col-md-6 col-lg-5 mb-4">
+                <div class="form-card login-card">
+                    <h3 class="mb-3">Login</h3>
+                    <form id="login-form">
+                        
+                        <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" id="login-username" name="username" placeholder="student123" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-school-email">School Email</label>
+                            <input type="email" id="login-school-email" name="school-email" placeholder="student@university.edu.tr" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" name="password" placeholder="••••••••" />
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Login</button>
+                        <p id="login-message" class="login-extra mt-3">
+                            This is a demonstration only – no real accounts are created or checked.
+                        </p>
+                    </form>
+                </div>
             </div>
 
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="••••••••"
-              />
-            </div>
-            <button type="submit" class="btn-primary">Login</button>
-            <p id="login-message" class="login-extra">
-              This is a demonstration only – no real accounts are created or
-              checked.
-            </p>
-          </form>
-
-          <div class="login-extra">
-            <strong>New to MISphere?</strong> In a real system, this section
-            would include links to sign-up and password reset pages. For the
-            project, it simply explains the concept without implementing full
-            functionality.
-          </div>
-        </div>
-      </section>
+        </div> </section>
     </main>
 
     <footer class="site-footer">
@@ -110,5 +129,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    </body>
 </html>
