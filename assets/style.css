@@ -1,8 +1,4 @@
-/* ===========================
-   MISphere – Global Styles
-   =========================== */
 
-/* Color variables */
 :root {
   --blue: #3895d3;
   --blue-dark: #2a6f9d;
@@ -13,7 +9,7 @@
   --bg-table-header: #f1f5f9;
 }
 
-/* Reset & base */
+
 * {
   box-sizing: border-box;
 }
@@ -36,7 +32,7 @@ h4 {
   color: #111111;
 }
 
-/* Layout */
+
 
 .site-header {
   border-bottom: 1px solid var(--border-light);
@@ -87,7 +83,7 @@ h4 {
   border-bottom-color: var(--blue);
 }
 
-/* Main content */
+
 
 .page-wrapper {
   max-width: 1000px;
@@ -106,7 +102,6 @@ h4 {
   margin-bottom: 20px;
 }
 
-/* Home: recent updates */
 
 .updates-list {
   margin-top: 24px;
@@ -147,7 +142,7 @@ h4 {
   font-size: 0.95rem;
 }
 
-/* Generic sections */
+
 
 .section {
   margin-top: 24px;
@@ -162,7 +157,6 @@ h4 {
   margin-bottom: 8px;
 }
 
-/* About page */
 
 .about-grid {
   display: grid;
@@ -177,7 +171,7 @@ h4 {
   background-color: #ffffff;
 }
 
-/* Events page */
+
 
 .events-table {
   width: 100%;
@@ -198,7 +192,7 @@ h4 {
   font-weight: bold;
 }
 
-/* Simple tag-like label */
+
 
 .label {
   display: inline-block;
@@ -209,7 +203,7 @@ h4 {
   background-color: #f9fafb;
 }
 
-/* Forum page */
+
 
 .forum-intro {
   margin-bottom: 16px;
@@ -240,7 +234,7 @@ h4 {
   color: #666666;
 }
 
-/* Simple form layout (forum + login) */
+
 
 .form-card {
   border: 1px solid var(--border-light);
@@ -296,14 +290,14 @@ h4 {
   margin-top: 8px;
 }
 
-/* Login page */
+
 
 .login-extra {
   margin-top: 12px;
   font-size: 0.85rem;
 }
 
-/* Profile page */
+
 
 .profile-layout {
   display: grid;
@@ -337,7 +331,7 @@ h4 {
   font-size: 0.93rem;
 }
 
-/* Footer */
+
 
 .site-footer {
   border-top: 1px solid var(--border-light);
