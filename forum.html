@@ -2,22 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Events – MISphere</title>
+    <title>Forum – MISphere</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" />
     <script src="assets/scripts.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="top-bar">
-        <a href="index.html" class="site-title">MISphere</a>
-        <nav class="main-nav">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="events.html" >Events</a>
-          <a href="forum.html" class="active">Forum</a>
-          <a href="login.html">Login</a>
-          <a href="profile.html">Profile</a>
-        </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+      <div class="container-fluid px-4">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#anaMenu" aria-controls="anaMenu" aria-expanded="false" aria-label="Menüyü Aç">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="anaMenu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold text-primary" href="forum.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="profile.html">Profile</a>
+            </li>
+          </ul>
+        </div>
+    
+        <a class="navbar-brand fw-bold text-primary fs-3" href="index.html">MISphere</a>
+        
       </div>
     </header>
 
@@ -93,5 +116,7 @@
         <div>Created for MIS203 Term Project</div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
