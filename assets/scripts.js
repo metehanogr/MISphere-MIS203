@@ -1,4 +1,4 @@
-// Footer: set current year
+
 document.addEventListener("DOMContentLoaded", function () {
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     yearSpan.textContent = currentYear;
   }
 
-  // Very simple "demo" behaviour for login form
+
   const loginForm = document.getElementById("login-form");
   const loginMessage = document.getElementById("login-message");
 
