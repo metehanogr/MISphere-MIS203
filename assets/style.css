@@ -30,6 +30,15 @@ h4 {
   color: #081a33;
 }
 
+/* --- LOGO DÜZENLEMESİ BURADA --- */
+.site-logo {
+  display: block;        /* Resmi blok eleman yapar, ortalamak için gerekli */
+  max-width: 250px;      /* Logonun maksimum genişliği (bunu artırıp azaltabilirsin) */
+  height: auto;          /* Resmin bozulmadan küçülmesini sağlar */
+  margin: 0 auto 20px auto; /* Resmi sayfada ortalar ve altına boşluk verir */
+}
+/* ------------------------------- */
+
 .site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   background-color: #5CACEE;
@@ -43,7 +52,6 @@ h4 {
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse;
-
 }
 
 .site-title {
@@ -94,20 +102,20 @@ h4 {
   color: #0f177a;
   margin-bottom: 24px;
   line-height: 2;
-  font-size:larger;
+  font-size: larger;
 }
 
 .section p {
-    font-size: large;
-    font-weight: 500;
-    background-color: transparent;
-    color: #1e293b;
+  font-size: large;
+  font-weight: 500;
+  background-color: transparent;
+  color: #1e293b;
 }
 
 p {
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: #1e293b;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #1e293b;
 }
 
 .updates-list {
@@ -363,14 +371,14 @@ ul {
   font-size: 1rem;
   margin-bottom: 2px;
   line-height: 1.5;
-  font-size:large;
+  font-size: large;
 }
 
 .section p,
 .section ul,
 .section li {
   color: #0f177a;
-  font-size:large;
+  font-size: large;
 }
 
 @media (max-width: 720px) {
@@ -409,4 +417,3 @@ ul {
 body:has(.login-grid) .page-wrapper {
   max-width: 1200px;
 }
-
