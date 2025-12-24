@@ -2,104 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Profile – MISphere</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <title>Profile - MISphere</title>
     <link rel="stylesheet" href="assets/style.css" />
     <script src="assets/scripts.js" defer></script>
   </head>
   <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
-      <div class="container-fluid px-4">
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#anaMenu" aria-controls="anaMenu" aria-expanded="false" aria-label="Menüyü Aç">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="anaMenu">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="events.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="forum.html">Forum</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fw-bold text-primary" href="profile.html">Profile</a>
-            </li>
-          </ul>
-        </div>
-    
-        <a class="navbar-brand fw-bold text-primary fs-3" href="index.html">MISphere</a>
-        
+    <header class="site-header">
+      <div class="top-bar">
+        <a href="index.html" class="site-logo-link">
+          <img
+            src="assets/img/logo.png"
+            alt="MISphere Logo"
+            class="site-logo"
+          />
+        </a>
+
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="forum.html">Forum</a>
+          <a href="login.html">Login</a>
+          <a href="profile.html" class="active">Profile</a>
+        </nav>
       </div>
-    </nav>
+    </header>
+
     <main class="page-wrapper">
       <h1 class="page-title">Student Profile</h1>
       <p class="page-subtitle">
-        A sample profile showing how a MIS student could present basic academic
-        information.
+        This profile shows user's login information and academic focus.
       </p>
 
       <div class="profile-layout">
         <section class="profile-card">
-          <div class="profile-name">Student Name</div>
-          <div class="profile-meta">
-            Management Information Systems · 2nd Year Student
+          <div class="profile-name" id="profile-name">MIS Student</div>
+          <div class="profile-meta" id="profile-meta">
+            Management Information Systems · Undergraduate Student
           </div>
-          <p>
-            informations related yourself
-          </p>
-          <p>
-           Example profile
+          <p id="profile-bio">
+            This profile uses data from the Login / Sign Up page. If you
+            have not filled the form yet, your information is not shown here yet. Please log in.
           </p>
         </section>
 
         <section class="profile-card">
           <h2>Academic Focus</h2>
           <p>Current areas of interest include:</p>
-          <ul class="profile-list">
+          <ol class="profile-list">
             <li>Business Intelligence and decision-support systems.</li>
             <li>Web development fundamentals for MIS projects.</li>
             <li>Cloud computing concepts and basic services.</li>
-          </ul>
+          </ol>
+          
+          <br>
 
           <h2>Typical Semester Courses</h2>
-          <ul class="profile-list">
-            <li>MIS203 – Web Technologies for MIS</li>
-            <li>MIS201 – Management Information Systems</li>
-            <li>Statistics for Business</li>
+          <ol class="profile-list">
+            <li>Web Programming Languages</li>
+            <li>Foundation of Information Systems</li>
+            <li>Statistics for MIS</li>
             <li>Financial Accounting</li>
-          </ul>
+          </ol>
 
           <h2>Activities</h2>
-          <ul class="profile-list">
+          <ol class="profile-list">
             <li>Participating in MIS-related student clubs.</li>
             <li>Attending department seminars and workshops.</li>
             <li>Working on small web and data projects in groups.</li>
-          </ul>
+          </ol>
         </section>
       </div>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <div>© <span id="year"></span> MISphere – MIS Students Blog</div>
+        <div>© <span id="year"></span> MISphere - MIS Students Blog</div>
         <div>Created for MIS203 Term Project</div>
       </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
