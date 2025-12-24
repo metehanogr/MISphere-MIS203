@@ -30,10 +30,9 @@ h4 {
   color: #081a33;
 }
 
-/* --- LOGO DÜZENLEMESİ BURADA --- */
 .site-logo {
   display: block;        /* Resmi blok eleman yapar, ortalamak için gerekli */
-  max-width: 250px;      /* Logonun maksimum genişliği (bunu artırıp azaltabilirsin) */
+  max-width: 100px;      /* Logonun maksimum genişliği (bunu artırıp azaltabilirsin) */
   height: auto;          /* Resmin bozulmadan küçülmesini sağlar */
   margin: 0 auto 20px auto; /* Resmi sayfada ortalar ve altına boşluk verir */
 }
